@@ -1,5 +1,11 @@
 package exceptions;
 
-public class WrongPasswordException {
-    //todo реализовать свое исключение
+public class WrongPasswordException extends Exception{
+
+    public WrongPasswordException() {
+    }
+
+    public WrongPasswordException(String message) {
+        super(message);
+    }
 }
